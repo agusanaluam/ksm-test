@@ -36,6 +36,10 @@ Server akan berjalan di http://localhost:3000. emudian pengujian dapat dilakukan
 ### Fizzbuzz
 API :
 ```bash
+curl -X GET http://localhost:3000/api/fizzbuzz/{:num}
+```
+Ganti `{:num}` dengan angka yang akan di cek, contohnya :
+```bash
 curl -X GET http://localhost:3000/api/fizzbuzz/15
 ```
 
@@ -46,6 +50,10 @@ Sampel Response yang ditampilkan:
 
 ### Palindrome
 API :
+```bash
+curl -X GET http://localhost:3000/api/palindrome/{:input}
+```
+Ganti `{:input}` dengan text yang akan di cek, contohnya :
 ```bash
 curl -X GET http://localhost:3000/api/palindrome/radar
 ```

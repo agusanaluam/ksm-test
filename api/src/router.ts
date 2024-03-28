@@ -4,7 +4,6 @@ import { palindromeHandler } from './controllers/palindromeController';
 
 const router = express.Router();
 
-// Route untuk melakukan FizzBuzz
 router.get('/fizzbuzz/:num', fizzBuzzHandler);
 router.get('/palindrome/:input', palindromeHandler);
 
